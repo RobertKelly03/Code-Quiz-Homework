@@ -1,0 +1,21 @@
+/*font*/
+body{
+    font-family: sans-serif;
+}
+/*h1 font size*/
+h1 {
+    font-size: 30px;
+}
+/*puts a margin around the input area*/
+input {
+    margin-top: 20px;
+}
+/*this styles the question box and gives it a shadow*/
+.box {
+    padding: 40px;
+    width: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 8px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 8px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: -1px 8px 15px 0px rgba(0,0,0,0.5);
+}

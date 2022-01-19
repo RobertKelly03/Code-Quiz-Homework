@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    </head>
+    <body onload="setup()">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="box">
+                    <h1 id="questionNo">Quiz</h1>
+                    <p id="question">Question</p>
+                    <input id="text-field" type="text" class="form-control">
+                    <input id="button" type="submit" value="Submit" class="btn btn-primary btn-block">
 
-    <link rel="stylesheet" href="style.css">
-    <title>4.3: Local Storage</title>
-</head>
-<body>
-    <h1>4.3: Local Storage</h1>
+                </div>
+            </div>
+        </div>
 
-    <div id='count'></div>
-    <button id='increment'>+</button>
-    <button id='decrement'>-</button>
-
-    <script src='script.js'></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
