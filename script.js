@@ -1,7 +1,21 @@
 // array that holds the questions and their answers
-const questions = [["What is my name?", "Robert"],["What is my last name?","Kelly"]];
+const questions = [["What is my first name?", "Robert"],["What is my last name?","Kelly"]];
 var questionNo = 1;
 var score = 0;
+// Timer
+let cTime = 60;
+function myTimer(){
+  if(cTime == 0){
+    document.getElementById("timerButton").innerHTML = "Restart";
+
+  }
+    else {
+    document.getElementById("timerButton").innerHTML = cTime;
+    cTime = cTime - 1;
+    setTimeout(myTimer, 1000);
+  }
+}
+
 // When button is clicked runs the check and setup function 
 function clickButton(){
     check();
